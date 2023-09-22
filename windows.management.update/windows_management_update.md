@@ -10,10 +10,10 @@ namespace Windows.Management.Update
 # Windows.Management.Update
 
 ## -description
-This API allows users to opt in or out of receiving Windows Insider Preview Builds on their device. This is intended to be used by IoT OEMs  
+This API allows Management tools or IT Administrators directly (with administrative privilages on a device) to register and control various aspects of updating. This includes triggering a restart using the Windows Update restart flow with commercial attribution.   
 
 ## -remarks
-This API allows an IoT device to receive Windows Insider Preview Builds. It's expected that the OEM of the device will create a settings page within the [Windows Device Portal](/windows/iot-core/manage-your-device/deviceportal) for device configuration properties. On a high level, information from [PreviewBuildsState](previewbuildsstate.md) will be read by the device, displayed to the user, and then used to register the user's account to the device. After registration, all settings management will be done through the online through the Windows Insider Program instead of the device itself. 
+This API is only available in Windows 11, version 22H2 and above. Further, the Preview Builds portion is designed for IoT OEMs only and it's expected that the OEM of the device will create a settings page within the [Windows Device Portal](/windows/iot-core/manage-your-device/deviceportal) for device configuration properties. All of the other portions are for all device types including client, server, IoT, etc. 
 
 ## -see-also
 
